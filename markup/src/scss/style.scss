@@ -25,6 +25,10 @@ $media-expressions: (
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/helpers';
+
+@import 'base/_icons.scss';
+@import 'base/_fonts.scss';
+
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/forms';

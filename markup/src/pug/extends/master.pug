@@ -7,24 +7,14 @@ html(lang="en")
 	head
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(charset='utf-8')
-		// build:js js/vendor.js defer=""
-		// bower:js
-		// endbower
-		// endbuild
-		// build:css css/vendor.css
-		// bower:css
-		// endbower
-		// endbuild
-		script(src='js/jquery.main.js', defer='')
+		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', defer='')
+		script(type='text/javascript').
+			window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')
+		script(src='js/jquery.main.js', defer)
 		include ../includes/styles
-		//- block head
 		title #{siteTitle}
 	body
 		#wrapper
 			include ../includes/header
-
 			block content
-
 			include ../includes/footer
-
-		//- block scripts

@@ -1,25 +1,16 @@
-#wrapper {
-	overflow: hidden;
-	width: 100%;
-	position: relative;
-}
-
-.container {
-	@extend %clearfix;
-	max-width: $max-container-width;
-	padding: 0 $trim;
-	margin: 0 auto;
-}
-
+html,
 body{
-	.content{
-		font-weight:bold;
-		.content-holder{
-			color:#0f0;
-			text-decoration:underline;
-		}
-		.content-frame{
-			background:#0f0;
-		}
-	}
+	height:100%;
+}
+
+#wrapper{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+    max-width: 1400px;
+	min-height: 100%;
+	overflow:hidden;
 }
