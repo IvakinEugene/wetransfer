@@ -1,0 +1,25 @@
+#wrapper {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
+.container {
+	@extend %clearfix;
+	max-width: $max-container-width;
+	padding: 0 $trim;
+	margin: 0 auto;
+}
+
+body{
+	.content{
+		font-weight:bold;
+		.content-holder{
+			color:#0f0;
+			text-decoration:underline;
+		}
+		.content-frame{
+			background:#0f0;
+		}
+	}
+}
