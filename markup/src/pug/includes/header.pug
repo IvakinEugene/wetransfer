@@ -1,68 +1,93 @@
 header#header
+	.header-banner
+		img(src="images/banner01.png", alt="Image description", width="1400", height="600")
 	.header-top
-		div
-			ul
-				li
-					a(href="#") Brands
-				li
-					a(href="#") OnMark TV
-				li
-					a(href="#") Blog
-				li
-					a(href="#") Help
-				li
-					a(href="#") Contact us
-				li
-					a(href="#") About project
-		div
-			a(href="#") Open your store
-			a(href="#") Call 24/7 
-				span.status
-				| *1234
-			ul
-				li
-					a(href="#") Az
-				li
-					a(href="#") Ru
-	.header-content
-		div
-			strong.logo
-				a(href="#")
-					img(src="images/", alt="OnMark", width="", height="")
-		div
-			.search-bar
-				form(action="")
-					.form-element
-						input(type="text", placeholder="I am searching for")
-					select
-						option.default Category
-						option.default Games
-						option.default Cars
-						option.default Toys
-					.submit-holder
-						input(type="submit", value="search")
-			a(href="#") Login | Register
-			a(href="#") Wishlist
-			a(href="#") 535 AZN
-				span.count 5
-	.nav-holder
-		div
+		.container
 			div
-				a(href="#") All categories
-			ul#nav
-				li
-					a(href="#") TV, audio, video
-				li
-					a(href="#") Smartphones
-				li
-					a(href="#") Gadgets
-				li
-					a(href="#") Kitchen
-				li
-					a(href="#") Home appliciances
-				li
-					a(href="#") Beauty and health
-				li
-					a(href="#") Photo and cameras
-		div
-			a(href="#") Flash deals
+				ul.header-top-nav
+					li
+						a(href="#") Brands
+					li
+						a(href="#") OnMark TV
+					li
+						a(href="#") Blog
+					li
+						a(href="#") Help
+					li
+						a(href="#") Contact us
+					li
+						a(href="#") About project
+			//- 
+			div
+				.create-store-box
+					a(href="#").opener Open your store
+				a(href="tel:*1234").link-call Call 24/7 
+					span.status
+					| *1234
+				ul.site-lang-list
+					li
+						a(href="#") Az
+					li
+						a(href="#") Ru
+	.header-content
+		.container
+			div
+				strong.logo
+					a(href="#")
+						img(src="images/logo.png", alt="OnMark", width="200", height="51")
+			div
+				.search-bar
+					form(action="#")
+						.form-element
+							input(type="text", placeholder="I am searching for")
+						select
+							option.default Category
+							option.default Games
+							option.default Cars
+							option.default Toys
+						.submit-holder.fa.fa-search
+							input(type="submit", value="search")
+				.login-box
+					a(href="#").opener.far.fa-user-circle Login | Register
+				.wishlist-box
+					a(href="#").opener.icon-heart-b-o Wishlist
+				.cart-box
+					a(href="#").opener.icon-basket-light 535 AZN
+						span.count 5
+	.nav-holder
+		.container
+			div
+				.categories-box
+					a(href="#").opener.icon-menu All categories
+				ul#nav
+					li.icon-tv
+						a(href="#")
+							span TV, audio, 
+								br
+								| video
+					li.icon-smartphone
+						a(href="#")
+							span Smartphones
+					li.icon-clock
+						a(href="#")
+							span Gadgets
+					li.icon-pan
+						a(href="#")
+							span Kitchen
+					li.icon-washer
+						a(href="#")
+							span Home 
+								br
+								| appliciances
+					li.icon-dryer
+						a(href="#")
+							span Beauty and 
+								br
+								| health
+					li.icon-photo
+						a(href="#")
+							span Photo and 
+								br
+								| cameras
+			div
+				a(href="#").btn-action Flash deals

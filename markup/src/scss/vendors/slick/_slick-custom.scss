@@ -1,0 +1,27 @@
+.products-slider {
+    margin:0 -10px;
+    .slick-track{
+		display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: flex-start;
+	    align-content: stretch;
+	    align-items: stretch;
+    }
+	.slick-slide{
+		height:auto;
+	    padding:0 10px;
+	    &,
+	    > div {
+	    	display: flex;
+		    flex-direction: row;
+		    flex-wrap: nowrap;
+		    justify-content: flex-start;
+		    align-content: stretch;
+		    align-items: stretch;
+	    }
+	    img{
+	        display:inline;
+	    }
+	}
+}

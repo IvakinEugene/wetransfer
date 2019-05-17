@@ -15,28 +15,24 @@ input[type='password'],
 //input[type='url'],
 // input[type='date'],
 textarea {
-	@include placeholder {
-		color: $placeholder-color;
-	}
-	color: $placeholder-color;
-	-webkit-appearance: none;
-	-webkit-border-radius: 0;
-	box-sizing: border-box;
-	display: block;
 	background: $form-element-background;
-	border: 1px solid $form-element-border-color;
-	padding: $form-element-padding;
-	font-size: 16px;
-	line-height: 20px;
-	height: 40px;
-	width: 100%;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: $placeholder-color;
+	display: block;
+	font-size: $placeholder-font-size;
+	line-height: $placeholder-line-height;
+	height: $form-element-height;
 	margin: 0;
 	outline: none;
-	box-shadow: none;
-	transition: border 0.3s;
-
-	&:focus {
-		border-color: $form-element-focus-border-color;
+	padding: $form-element-padding;
+	width: 100%;
+	-webkit-appearance: none;
+	// -webkit-border-radius: 0;
+	@include placeholder {
+		color: $placeholder-color;
 	}
 }
 

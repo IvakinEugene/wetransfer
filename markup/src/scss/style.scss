@@ -36,3 +36,11 @@ $media-expressions: (
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/common';
+
+@import 'vendors/slick/_slick.scss';
+@import 'vendors/slick/_slick-custom.scss';
+@import 'layout/_base-elements.scss';
+
+@import 'vendors/fontawesome/_fontawesome.scss';
+@import 'vendors/fontawesome/_regular.scss';
+@import 'vendors/fontawesome/_solid.scss';

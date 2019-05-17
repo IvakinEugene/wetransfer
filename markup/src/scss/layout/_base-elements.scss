@@ -1,0 +1,150 @@
+.product-box{
+	background:$white;
+	height:359px;
+	position:relative;
+	.media-holder{
+		display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-content: center;
+	    align-items: center;
+		height:190px;
+		margin:0 0 3px;
+		// text-align:center;
+	}
+	.txt{
+		padding:0 20px 20px;
+	}
+	.rating{
+		margin-bottom:10px;
+	}
+	.title{
+		display:block;
+		font-size:14px;
+		font-weight:normal;
+		line-height:20px;
+		margin:0 0 10px;
+	}
+	.footer{
+		bottom:0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-content: flex-end;
+		align-items: flex-end;
+		left:0;
+		padding:0 20px 20px;
+		position:absolute;
+		width:100%;
+	}
+	.action-list{
+		display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: flex-start;
+	    align-content: center;
+    	align-items: center;
+    	font-size:26px;
+    	line-height:1;
+    	margin:0 -1px 0 0;
+		li{
+			padding:0 0 0 10px;
+			&.active {
+				[class*="basket"]{
+					color:$green;
+					&:before {
+						content: '\e901';
+					}
+				}
+				[class*="heart"]{
+					color:$theme-color-base;
+				}
+			}
+			&:before {
+				display:none;
+			}
+		}
+		a{
+			color:$base-gray;
+		}
+		[class*="basket"]{
+			&:hover {
+				color:$green;
+			}
+		}
+		[class*="heart"]{
+			font-size: 22px;
+			&:hover {
+				color:$theme-color-base;
+			}
+		}
+	}
+	.price{}
+}
+
+.price{
+	display:inline-block;
+	vertical-align:top;
+	font:bold 34px/1 $base-font-condensed;
+	padding:0 16px 0 0;
+	position:relative;
+	&:before {
+		font-size: 15px;
+		position:absolute;
+		right:0;
+		top:3px;
+	}
+}
+
+.rating{
+	color:$base-gray;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: flex-start;
+	font-size:8px;
+	line-height:1;
+	margin:0 0 0 -2px;
+	&.one {
+		> div{
+			&:first-child {
+				color:$theme-color-base;
+			}
+		}
+	}
+	&.two {
+		> div{
+			&:nth-child(1),
+			&:nth-child(2) {
+				color:$theme-color-base;
+			}
+		}
+	}
+	&.three {
+		> div{
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				color:$theme-color-base;
+			}
+		}
+	}
+	&.four {
+		color:$theme-color-base;
+		> div{
+			&:last-child {
+				color:$base-gray;
+			}
+		}
+	}
+	&.five {
+		color:$theme-color-base;
+	}
+	> div{
+		margin:0 8px 0 0;
+	}
+}

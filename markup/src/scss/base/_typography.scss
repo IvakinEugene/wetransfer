@@ -7,22 +7,40 @@ h4, .h4,
 h5, .h5,
 h6, .h6,
 .h {
+	color: $headings-color;
 	font-family: $headings-font-family;
 	font-weight: bold;
 	margin: 0 0 0.5em;
-	color: $headings-color;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.title{
+	a{
+		color:inherit;
+		&:hover {
+			color:$base-link-color;
+		}
+	}
 }
 
 h1, .h1 {
 	font-size: $h1-font-size;
+	line-height:30px;
 }
 
 h2, .h2 {
 	font-size: $h2-font-size;
+	line-height:30px;
 }
 
 h3, .h3 {
 	font-size: $h3-font-size;
+	line-height:25px;
 }
 
 h4, .h4 {
@@ -43,10 +61,29 @@ p {
 
 a {
 	color: $base-link-color;
-	transition: color 0.3s;
-	
+	text-decoration:none;
+	transition: color $animation-speed;
 	&:hover {
-		text-decoration: none;
 		color: $base-link-hover-color;
+	}
+}
+
+ul{
+	@extend %listreset;
+	li{
+		padding:0 0 0 11px;
+		overflow:hidden;
+		position:relative;
+		vertical-align:top;
+		&:before {
+			background:$theme-color-base;
+			border-radius: 100%;
+			content: '';
+			height:3px;
+			left:1px;
+			position:absolute;
+			top:9px;
+			width:3px;
+		}
 	}
 }
