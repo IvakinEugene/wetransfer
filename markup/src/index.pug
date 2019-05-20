@@ -3,12 +3,24 @@ extends pug/extends/master
 block content
 	main#main
 		//- 
+			section.section-top-offers
+				.container
+					select
+						option.default Body size
+						option Games
+						option Cars
+						option Toys
+					div
+						.form-element
+							input(type="text", placeholder="Nariman Asadov")
+							label.label-text Name and Surname
 		section.section-top-offers
 			.container
 				div
 					a(href="#")
 						img(src="images/img01.jpg", alt="Image description", width="698", height="294")
 				div
+					//- 
 					.product-box.large
 						.discount -13%
 						.heading
@@ -28,7 +40,10 @@ block content
 									a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
 								.footer
 									div
-										span.price.icon-manat 55
+										span.recalculated-price
+											span.price.old.icon-manat 1900
+											span.new -490
+										span.price.icon-manat 4210
 									div
 										ul.action-list
 											li
@@ -37,22 +52,23 @@ block content
 												a(href="#").icon-basket-add
 		section.section-recent
 			.container
-				.heading
+				.section-heading
 					h2 New products
 					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
 				.products-slider.slick-slider
-					.product-box
-						.media-holder
-							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
+					div
+						.product-box
+							.media-holder
+								img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
 							.footer
 								div
 									span.price.icon-manat 55
@@ -62,18 +78,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img04.jpg", alt="Image description", width="194", height="128")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.media-holder
+								img(src="images/img04.jpg", alt="Image description", width="194", height="128")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.price.icon-manat 786
@@ -83,18 +100,19 @@ block content
 											a(href="#").icon-heart-o
 										li.active
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img05.jpg", alt="Image description", width="150", height="150")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.media-holder
+								img(src="images/img05.jpg", alt="Image description", width="150", height="150")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.price.icon-manat 2210
@@ -104,18 +122,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img06.jpg", alt="Image description", width="174", height="174")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Men's sweater Puma ESS Logo Crew Sweat FL
+					div
+						.product-box
+							.media-holder
+								img(src="images/img06.jpg", alt="Image description", width="174", height="174")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Men's sweater Puma ESS Logo Crew Sweat FL
 							.footer
 								div
 									span.price.icon-manat 49
@@ -125,18 +144,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img07.jpg", alt="Image description", width="176", height="155")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.media-holder
+								img(src="images/img07.jpg", alt="Image description", width="176", height="155")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.price.icon-manat 2210
@@ -146,18 +166,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
+					div
+						.product-box
+							.media-holder
+								img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
 							.footer
 								div
 									span.price.icon-manat 55
@@ -167,18 +188,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img04.jpg", alt="Image description", width="194", height="128")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.media-holder
+								img(src="images/img04.jpg", alt="Image description", width="194", height="128")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.price.icon-manat 786
@@ -190,23 +212,24 @@ block content
 											a(href="#").icon-basket-add
 		section.section-recent
 			.container
-				.heading
+				.section-heading
 					h2 Fresh deals
 					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
 				.products-slider.slick-slider
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.discount -13%
+							.media-holder
+								img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.recalculated-price
@@ -219,19 +242,20 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/img07.jpg", alt="Image description", width="176", height="155")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.discount -13%
+							.media-holder
+								img(src="images/img07.jpg", alt="Image description", width="176", height="155")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.recalculated-price
@@ -244,19 +268,20 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/img04.jpg", alt="Image description", width="192", height="128")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.discount -13%
+							.media-holder
+								img(src="images/img04.jpg", alt="Image description", width="192", height="128")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.recalculated-price
@@ -269,19 +294,20 @@ block content
 											a(href="#").icon-heart-o
 										li.active
 											a(href="#").icon-basket-add
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/img02.jpg", alt="Image description", width="175", height="175")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.discount -13%
+							.media-holder
+								img(src="images/img02.jpg", alt="Image description", width="175", height="175")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.recalculated-price
@@ -294,19 +320,20 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/img06.jpg", alt="Image description", width="174", height="174")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Men's sweater Puma ESS Logo Crew Sweat FL
+					div
+						.product-box
+							.discount -13%
+							.media-holder
+								img(src="images/img06.jpg", alt="Image description", width="174", height="174")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Men's sweater Puma ESS Logo Crew Sweat FL
 							.footer
 								div
 									span.recalculated-price
@@ -319,19 +346,20 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.discount -13%
+							.media-holder
+								img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.recalculated-price
@@ -344,19 +372,20 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/img07.jpg", alt="Image description", width="176", height="155")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.discount -13%
+							.media-holder
+								img(src="images/img07.jpg", alt="Image description", width="176", height="155")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.recalculated-price
@@ -371,22 +400,23 @@ block content
 											a(href="#").icon-basket-add
 		section.section-recent
 			.container
-				.heading
+				.section-heading
 					h2 Top products
 					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
 				.products-slider.slick-slider
-					.product-box
-						.media-holder
-							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
+					div
+						.product-box
+							.media-holder
+								img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
 							.footer
 								div
 									span.price.icon-manat 55
@@ -396,18 +426,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img04.jpg", alt="Image description", width="194", height="128")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.media-holder
+								img(src="images/img04.jpg", alt="Image description", width="194", height="128")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.price.icon-manat 786
@@ -417,18 +448,19 @@ block content
 											a(href="#").icon-heart-o
 										li.active
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img05.jpg", alt="Image description", width="150", height="150")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.media-holder
+								img(src="images/img05.jpg", alt="Image description", width="150", height="150")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.price.icon-manat 2210
@@ -438,18 +470,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img06.jpg", alt="Image description", width="174", height="174")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Men's sweater Puma ESS Logo Crew Sweat FL
+					div
+						.product-box
+							.media-holder
+								img(src="images/img06.jpg", alt="Image description", width="174", height="174")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Men's sweater Puma ESS Logo Crew Sweat FL
 							.footer
 								div
 									span.price.icon-manat 49
@@ -459,18 +492,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img07.jpg", alt="Image description", width="176", height="155")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.media-holder
+								img(src="images/img07.jpg", alt="Image description", width="176", height="155")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.price.icon-manat 2210
@@ -480,18 +514,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
+					div
+						.product-box
+							.media-holder
+								img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
 							.footer
 								div
 									span.price.icon-manat 55
@@ -501,18 +536,19 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-					.product-box
-						.media-holder
-							img(src="images/img04.jpg", alt="Image description", width="194", height="128")
-						.txt
-							.rating.four
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-								.fas.fa-star
-							strong.title
-								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+					div
+						.product-box
+							.media-holder
+								img(src="images/img04.jpg", alt="Image description", width="194", height="128")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116
 							.footer
 								div
 									span.price.icon-manat 786
@@ -527,7 +563,7 @@ block content
 				img(src="images/banner02.png", alt="Image description", width="1399", height="217")
 		section.section-recent
 			.container
-				.heading
+				.section-heading
 					h2 Bestsellers
 					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
 				.logos-slider.slick-logos
@@ -581,7 +617,7 @@ block content
 							img(src="images/logo-irsad.png", alt="Image description", width="116", height="38")
 		section.section-recent
 			.container
-				.heading
+				.section-heading
 					h2 Blog
 					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
 				ul.list

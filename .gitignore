@@ -1,6 +1,4 @@
-3 - done.bat
-1 - install.bat
-2 - start.bat
+*.bat
 markup/dist
 markup/node_modules
 *.rar

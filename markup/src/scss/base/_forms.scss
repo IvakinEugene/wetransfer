@@ -7,6 +7,10 @@ fieldset {
 	border-style: none;
 }
 
+.form-element{
+	position:relative;
+}
+
 input[type='text'],
 input[type='tel'],
 input[type='email'],
@@ -16,7 +20,7 @@ input[type='password'],
 // input[type='date'],
 textarea {
 	background: $form-element-background;
-	border: 0;
+	border: 1px solid $form-element-background;
 	border-radius: 5px;
 	box-shadow: none;
 	box-sizing: border-box;
@@ -28,13 +32,58 @@ textarea {
 	margin: 0;
 	outline: none;
 	padding: $form-element-padding;
+	transition:border-color $animation-speed, background $animation-speed, box-shadow $animation-speed;
 	width: 100%;
 	-webkit-appearance: none;
 	// -webkit-border-radius: 0;
 	@include placeholder {
 		color: $placeholder-color;
+		opacity:0;
+	}
+	&:focus {
+		background:$white;
+		border-color: $form-element-focus-border-color;
 	}
 }
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password']{
+	&:placeholder-shown {
+		 + label{
+			color: #9b9b9b;
+			font-size: 14px;
+			line-height:1.2857;
+			left:12px;
+			padding:0 7px;
+			pointer-events:none;
+			position:absolute;
+			top:13px;
+			transition:all $animation-speed;
+			z-index:5;
+		}
+	}
+	&:not(:placeholder-shown),
+	&:focus{
+		background:$white;
+		border-color: $theme-color-add;
+		box-shadow: 0 2px 7px rgba($black, 0.08);
+		+ label{
+			background:$white;
+			color: #9b9b9b;
+			font-size: 14px;
+			left:12px;
+			line-height: 18px;
+			padding:0 7px;
+			pointer-events:none;
+			position:absolute;
+			top: -12px;
+		}
+	}
+}
+
 
 select {
 	-webkit-border-radius: 0;
@@ -60,4 +109,3 @@ input[type='submit'] {
 	-webkit-border-radius: 0;
 	cursor: pointer;
 }
-

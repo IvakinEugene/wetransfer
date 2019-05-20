@@ -14,7 +14,7 @@
 	font-size:0;
 	line-height:0;
 	li{
-		margin:8px 21px;
+		margin:10px 21px;
 		padding:0;
 		&.slick-active,
 		&:hover {
@@ -57,8 +57,9 @@
 		height:auto;
 		padding:20px 10px;
 		&,
-		> div {
-			display: flex;
+		> div,
+		> div > div {
+			display: flex !important;
 			flex-direction: row;
 			flex-wrap: nowrap;
 			justify-content: flex-start;

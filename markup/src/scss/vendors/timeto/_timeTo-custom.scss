@@ -4,7 +4,7 @@
 	color:#4a4a4a;
 	font-family: $base-font-family !important;
 	height:auto;
-	padding:6px 15px 20px;
+	padding:6px 15px;
 	&.timeTo-white {
 		div{
 			background:none;
@@ -26,12 +26,23 @@
 	}
 	figure{
 		// display:none;
+		text-align:center;
 		div{
-			margin:0 -7px 0 0;
+			margin:0 -3px 0 -4px;
 		}
 	}
 	figcaption{
 		color:inherit;
 		text-transform:uppercase;
+	}
+	span{
+		background:$theme-color-add;
+		display:inline-block;
+		// vertical-align:top;
+		font-size:0;
+		height:30px;
+		line-height:0;
+		margin:0 10px;
+		width:1px;
 	}
 }

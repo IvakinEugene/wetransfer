@@ -42,13 +42,13 @@ $base-link-hover-color: #bf082a;
 
 // Forms
 $form-element-height:				50px;
-$form-element-padding:				15px 15px 16px;
+$form-element-padding:				12px 17px;
 $form-element-background:			$background-color-add;
-// $form-element-border-color: $gray !default;
-// $form-element-focus-border-color: $black !default;
-$placeholder-color:					#9b9b9b;
-$placeholder-font-size:				14px;
-$placeholder-line-height:			19px;
+$form-element-border-color:			$form-element-background;
+$form-element-focus-border-color:	$theme-color-add;
+$placeholder-color:					#4a4a4a;
+$placeholder-font-size:				18px;
+$placeholder-line-height:			24px;
 
 // Headers
 $h1-font-size: 24px;

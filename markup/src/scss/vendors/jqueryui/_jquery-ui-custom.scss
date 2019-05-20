@@ -1,0 +1,22 @@
+.ui-autocomplete{
+	background:$white;
+	border: 1px solid $theme-color-add;
+	border-radius: 5px;
+	font-size:18px;
+	line-height:1.2857;
+	margin:1px 0 0 -1px;
+	li{
+		padding:0;
+		&:before {
+			display:none;
+		}
+	}
+	.ui-menu-item-wrapper{
+		padding:10px 13px;
+	}
+	.ui-state-active{
+		background:$theme-color-add;
+		color:$white;
+		margin:0;
+	}
+}

@@ -41,9 +41,14 @@ $media-expressions: (
 @import 'vendors/slick/_slick-custom.scss';
 @import 'layout/_base-elements.scss';
 
+@import 'pages/_category.scss';
+
 @import 'vendors/fontawesome/_fontawesome.scss';
 @import 'vendors/fontawesome/_regular.scss';
 @import 'vendors/fontawesome/_solid.scss';
 @import 'vendors/fontawesome/_brands.scss';
 @import 'vendors/timeto/_timeTo.scss';
 @import 'vendors/timeto/_timeTo-custom.scss';
+@import 'vendors/jcf/_jcf.scss';
+@import 'vendors/jqueryui/_jquery-ui.scss';
+@import 'vendors/jqueryui/_jquery-ui-custom.scss';

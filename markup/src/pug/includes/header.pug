@@ -40,16 +40,19 @@ header#header
 				.search-bar
 					form(action="#")
 						.form-element
-							input(type="text", placeholder="I am searching for")
+							input(type="text", placeholder="I am searching for")#categories
+							label I am searching for
 						select
 							option.default Category
-							option.default Games
-							option.default Cars
-							option.default Toys
+							option Games
+							option Cars
+							option Toys
 						.submit-holder.fa.fa-search
 							input(type="submit", value="search")
 				.login-box
-					a(href="#").opener.far.fa-user-circle Login | Register
+					.opener.far.fa-user-circle
+						a(href="#") Login
+						a(href="#") Register
 				.wishlist-box
 					a(href="#").opener.icon-heart-b-o Wishlist
 				.cart-box
