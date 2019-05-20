@@ -3,12 +3,38 @@ extends pug/extends/master
 block content
 	main#main
 		//- 
-			section.section-
-				.container
-					div
-						| 1
-					div
-						| 2
+		section.section-top-offers
+			.container
+				div
+					a(href="#")
+						img(src="images/img01.jpg", alt="Image description", width="698", height="294")
+				div
+					.product-box.large
+						.discount -13%
+						.heading
+							strong.title Today’s Offers
+							.countdown
+						.content
+							.media-holder
+								img(src="images/img02.jpg", alt="Image description", width="175", height="175")
+							.txt
+								.rating.four
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+									.fas.fa-star
+								strong.title
+									a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
+								.footer
+									div
+										span.price.icon-manat 55
+									div
+										ul.action-list
+											li
+												a(href="#").icon-heart-o
+											li
+												a(href="#").icon-basket-add
 		section.section-recent
 			.container
 				.heading
@@ -74,7 +100,7 @@ block content
 									span.price.icon-manat 2210
 								div
 									ul.action-list
-										li
+										li.active
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
@@ -120,142 +146,10 @@ block content
 											a(href="#").icon-heart-o
 										li
 											a(href="#").icon-basket-add
-		section.section-recent
-			.container
-				.heading
-					h2 Fresh deals
-					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
-				.products-slider.slick-slider
-					.product-box.sale
-						.discount -13%
+					.product-box
 						.media-holder
-							img(src="images/", alt="Image description", width="", height="")
+							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
 						.txt
-						.rating.four
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-						strong.title
-							a(href="#") Women's casual sneaker U.S. Polo Assn 116
-						.footer
-							div
-								span.price.icon-manat.old 27
-									span.discount -28
-								span.price.icon-manat 55
-							div
-								ul.action-list
-									li
-										a(href="#").icon-heart-o
-									li
-										a(href="#").icon-basket-add
-				li
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/", alt="Image description", width="", height="")
-						.rating.four
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-						strong.title
-							a(href="#") Women's casual sneaker U.S. Polo Assn 116
-						.footer
-							div
-								span.price.icon-manat.old 2700 anz
-									span.discount -490
-								span.price.icon-manat 2210
-							div
-								ul.action-list
-									li
-										a(href="#") like
-									li
-										a(href="#") buy
-				li
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/", alt="Image description", width="", height="")
-						.rating.four
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-						strong.title
-							a(href="#") Women's casual sneaker U.S. Polo Assn 116
-						.footer
-							div
-								span.price.icon-manat.old 1900 anz
-									span.discount -490
-								span.price.icon-manat 4210
-							div
-								ul.action-list
-									li
-										a(href="#") like
-									li
-										a(href="#") buy
-				li
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/", alt="Image description", width="", height="")
-						.rating.four
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-						strong.title
-							a(href="#") Men's sweater Puma ESS Logo Crew Sweat FL
-						.footer
-							div
-								span.price.icon-manat.old 1900 anz
-									span.discount -490
-								span.price.icon-manat 2145
-							div
-								ul.action-list
-									li
-										a(href="#") like
-									li
-										a(href="#") buy
-				li
-					.product-box
-						.discount -13%
-						.media-holder
-							img(src="images/", alt="Image description", width="", height="")
-						.rating.four
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-							.fas.fa-star
-						strong.title
-							a(href="#") Women's casual sneaker U.S. Polo Assn 116
-						.footer
-							div
-								span.price.icon-manat.old 27 anz
-									span.discount -28
-								span.price.icon-manat 55
-							div
-								ul.action-list
-									li
-										a(href="#") like
-									li
-										a(href="#") buy
-		section.section-recent
-			.container
-				.heading
-					h2 Top products
-					a(href="#") View all
-				ul
-					li
-						.product-box
-							.media-holder
-								img(src="images/", alt="Image description", width="", height="")
 							.rating.four
 								.fas.fa-star
 								.fas.fa-star
@@ -270,13 +164,13 @@ block content
 								div
 									ul.action-list
 										li
-											a(href="#") like
+											a(href="#").icon-heart-o
 										li
-											a(href="#") buy
-					li
-						.product-box
-							.media-holder
-								img(src="images/", alt="Image description", width="", height="")
+											a(href="#").icon-basket-add
+					.product-box
+						.media-holder
+							img(src="images/img04.jpg", alt="Image description", width="194", height="128")
+						.txt
 							.rating.four
 								.fas.fa-star
 								.fas.fa-star
@@ -291,13 +185,242 @@ block content
 								div
 									ul.action-list
 										li
-											a(href="#") like
+											a(href="#").icon-heart-o
+										li.active
+											a(href="#").icon-basket-add
+		section.section-recent
+			.container
+				.heading
+					h2 Fresh deals
+					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
+				.products-slider.slick-slider
+					.product-box
+						.discount -13%
+						.media-holder
+							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+							.footer
+								div
+									span.recalculated-price
+										span.price.old.icon-manat 27
+										span.new -28
+									span.price.icon-manat 55
+								div
+									ul.action-list
 										li
-											a(href="#") buy
-					li
-						.product-box
-							.media-holder
-								img(src="images/", alt="Image description", width="", height="")
+											a(href="#").icon-heart-o
+										li
+											a(href="#").icon-basket-add
+					.product-box
+						.discount -13%
+						.media-holder
+							img(src="images/img07.jpg", alt="Image description", width="176", height="155")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+							.footer
+								div
+									span.recalculated-price
+										span.price.old.icon-manat 2700
+										span.new -490
+									span.price.icon-manat 2210
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li
+											a(href="#").icon-basket-add
+					.product-box
+						.discount -13%
+						.media-holder
+							img(src="images/img04.jpg", alt="Image description", width="192", height="128")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+							.footer
+								div
+									span.recalculated-price
+										span.price.old.icon-manat 1900
+										span.new -490
+									span.price.icon-manat 4210
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li.active
+											a(href="#").icon-basket-add
+					.product-box
+						.discount -13%
+						.media-holder
+							img(src="images/img02.jpg", alt="Image description", width="175", height="175")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+							.footer
+								div
+									span.recalculated-price
+										span.price.old.icon-manat 1900
+										span.new -490
+									span.price.icon-manat 2145
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li
+											a(href="#").icon-basket-add
+					.product-box
+						.discount -13%
+						.media-holder
+							img(src="images/img06.jpg", alt="Image description", width="174", height="174")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Men's sweater Puma ESS Logo Crew Sweat FL
+							.footer
+								div
+									span.recalculated-price
+										span.price.old.icon-manat 27
+										span.new -28
+									span.price.icon-manat 55
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li
+											a(href="#").icon-basket-add
+					.product-box
+						.discount -13%
+						.media-holder
+							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+							.footer
+								div
+									span.recalculated-price
+										span.price.old.icon-manat 27
+										span.new -28
+									span.price.icon-manat 55
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li
+											a(href="#").icon-basket-add
+					.product-box
+						.discount -13%
+						.media-holder
+							img(src="images/img07.jpg", alt="Image description", width="176", height="155")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+							.footer
+								div
+									span.recalculated-price
+										span.price.old.icon-manat 2700
+										span.new -490
+									span.price.icon-manat 2210
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li
+											a(href="#").icon-basket-add
+		section.section-recent
+			.container
+				.heading
+					h2 Top products
+					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
+				.products-slider.slick-slider
+					.product-box
+						.media-holder
+							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
+							.footer
+								div
+									span.price.icon-manat 55
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li
+											a(href="#").icon-basket-add
+					.product-box
+						.media-holder
+							img(src="images/img04.jpg", alt="Image description", width="194", height="128")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+							.footer
+								div
+									span.price.icon-manat 786
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li.active
+											a(href="#").icon-basket-add
+					.product-box
+						.media-holder
+							img(src="images/img05.jpg", alt="Image description", width="150", height="150")
+						.txt
 							.rating.four
 								.fas.fa-star
 								.fas.fa-star
@@ -311,14 +434,14 @@ block content
 									span.price.icon-manat 2210
 								div
 									ul.action-list
+										li.active
+											a(href="#").icon-heart-o
 										li
-											a(href="#") like
-										li
-											a(href="#") buy
-					li
-						.product-box
-							.media-holder
-								img(src="images/", alt="Image description", width="", height="")
+											a(href="#").icon-basket-add
+					.product-box
+						.media-holder
+							img(src="images/img06.jpg", alt="Image description", width="174", height="174")
+						.txt
 							.rating.four
 								.fas.fa-star
 								.fas.fa-star
@@ -333,13 +456,13 @@ block content
 								div
 									ul.action-list
 										li
-											a(href="#") like
+											a(href="#").icon-heart-o
 										li
-											a(href="#") buy
-					li
-						.product-box
-							.media-holder
-								img(src="images/", alt="Image description", width="", height="")
+											a(href="#").icon-basket-add
+					.product-box
+						.media-holder
+							img(src="images/img07.jpg", alt="Image description", width="176", height="155")
+						.txt
 							.rating.four
 								.fas.fa-star
 								.fas.fa-star
@@ -354,67 +477,134 @@ block content
 								div
 									ul.action-list
 										li
-											a(href="#") like
+											a(href="#").icon-heart-o
 										li
-											a(href="#") buy
+											a(href="#").icon-basket-add
+					.product-box
+						.media-holder
+							img(src="images/img03.jpg", alt="Image description", width="149", height="156")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116 casual sneaker
+							.footer
+								div
+									span.price.icon-manat 55
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li
+											a(href="#").icon-basket-add
+					.product-box
+						.media-holder
+							img(src="images/img04.jpg", alt="Image description", width="194", height="128")
+						.txt
+							.rating.four
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+								.fas.fa-star
+							strong.title
+								a(href="#") Women's casual sneaker U.S. Polo Assn 116
+							.footer
+								div
+									span.price.icon-manat 786
+								div
+									ul.action-list
+										li
+											a(href="#").icon-heart-o
+										li.active
+											a(href="#").icon-basket-add
 		section.section-banner
-			img(src="images/", alt="Image description", width="", height="")
+			a(href="#")
+				img(src="images/banner02.png", alt="Image description", width="1399", height="217")
 		section.section-recent
 			.container
 				.heading
 					h2 Bestsellers
-					a(href="#") View all
-				ul
-					li
+					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
+				.logos-slider.slick-logos
+					div
 						a(href="#")
-							img(src="images/", alt="Image description", width="", height="")
-					li
+							img(src="images/logo-mobitel.png", alt="Image description", width="110", height="26")
+					div
 						a(href="#")
-							img(src="images/", alt="Image description", width="", height="")
-					li
+							img(src="images/logo-kontakt-home.png", alt="Image description", width="98", height="62")
+					div
 						a(href="#")
-							img(src="images/", alt="Image description", width="", height="")
-					li
+							img(src="images/logo-west-telecom.png", alt="Image description", width="130", height="31")
+					div
 						a(href="#")
-							img(src="images/", alt="Image description", width="", height="")
-					li
+							img(src="images/logo-irsad.png", alt="Image description", width="116", height="38")
+					div
 						a(href="#")
-							img(src="images/", alt="Image description", width="", height="")
-					li
+							img(src="images/logo-mobitel.png", alt="Image description", width="110", height="26")
+					div
 						a(href="#")
-							img(src="images/", alt="Image description", width="", height="")
-					li
+							img(src="images/logo-kontakt-home.png", alt="Image description", width="98", height="62")
+					div
 						a(href="#")
-							img(src="images/", alt="Image description", width="", height="")
-					li
+							img(src="images/logo-west-telecom.png", alt="Image description", width="130", height="31")
+					div
 						a(href="#")
-							img(src="images/", alt="Image description", width="", height="")
+							img(src="images/logo-irsad.png", alt="Image description", width="116", height="38")
+					div
+						a(href="#")
+							img(src="images/logo-mobitel.png", alt="Image description", width="110", height="26")
+					div
+						a(href="#")
+							img(src="images/logo-kontakt-home.png", alt="Image description", width="98", height="62")
+					div
+						a(href="#")
+							img(src="images/logo-west-telecom.png", alt="Image description", width="130", height="31")
+					div
+						a(href="#")
+							img(src="images/logo-irsad.png", alt="Image description", width="116", height="38")
+					div
+						a(href="#")
+							img(src="images/logo-mobitel.png", alt="Image description", width="110", height="26")
+					div
+						a(href="#")
+							img(src="images/logo-kontakt-home.png", alt="Image description", width="98", height="62")
+					div
+						a(href="#")
+							img(src="images/logo-west-telecom.png", alt="Image description", width="130", height="31")
+					div
+						a(href="#")
+							img(src="images/logo-irsad.png", alt="Image description", width="116", height="38")
 		section.section-recent
 			.container
 				.heading
 					h2 Blog
-					a(href="#") View all
-				ul
+					a(href="#").link-view-more.fas.fa-long-arrow-alt-right View all
+				ul.list
 					li
-						.blog-tile
+						.post-preview
 							.media-holder
-								img(src="images/", alt="Image description", width="", height="")
+								img(src="images/img08.jpg", alt="Image description", width="380", height="263")
 								time(datetime="2019-03-9") 9 march 2019
 							.txt
 								h3
 									a(href="#") A New-Way to E-Commerce with shopping apps now see
 					li
-						.blog-tile
+						.post-preview
 							.media-holder
-								img(src="images/", alt="Image description", width="", height="")
+								img(src="images/img09.jpg", alt="Image description", width="380", height="263")
 								time(datetime="2019-03-9") 9 march 2019
 							.txt
 								h3
 									a(href="#") The 9th Annual European E-Commerce Conference. The Report
 					li
-						.blog-tile
+						.post-preview
 							.media-holder
-								img(src="images/", alt="Image description", width="", height="")
+								img(src="images/img10.jpg", alt="Image description", width="380", height="263")
 								time(datetime="2019-03-9") 9 march 2019
 							.txt
 								h3

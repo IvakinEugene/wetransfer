@@ -1,27 +1,85 @@
+.slick-slide{
+	img{
+		display:inline;
+	}
+}
+
+.slick-dots{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: flex-start;
+	align-items: flex-start;
+	font-size:0;
+	line-height:0;
+	li{
+		margin:8px 21px;
+		padding:0;
+		&.slick-active,
+		&:hover {
+			button{
+				background:$theme-color-add;
+			}
+		}
+		&:before {
+			display:none;
+		}
+	}
+	button{
+		background:$base-gray;
+		border: 0;
+		border-radius: 4px;
+		// font-size:0;
+		height:7px;
+		// line-height:0;
+		margin:0;
+		padding:0;
+		transition: background $animation-speed;
+		width:38px;
+	}
+}
+
 .products-slider {
-    margin:0 -10px;
-    .slick-track{
+	margin:0 -20px;
+	.slick-list{
+		padding:0 10px;
+	}
+	.slick-track{
 		display: flex;
-	    flex-direction: row;
-	    flex-wrap: nowrap;
-	    justify-content: flex-start;
-	    align-content: stretch;
-	    align-items: stretch;
-    }
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: stretch;
+		align-items: stretch;
+	}
 	.slick-slide{
 		height:auto;
-	    padding:0 10px;
-	    &,
-	    > div {
-	    	display: flex;
-		    flex-direction: row;
-		    flex-wrap: nowrap;
-		    justify-content: flex-start;
-		    align-content: stretch;
-		    align-items: stretch;
-	    }
-	    img{
-	        display:inline;
-	    }
+		padding:20px 10px;
+		&,
+		> div {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-content: stretch;
+			align-items: stretch;
+		}
+	}
+}
+
+.logos-slider{
+	background:$white;
+	padding:14px 10px;
+	.slick-track{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+	}
+	.slick-slide{
+		text-align:center;
 	}
 }
