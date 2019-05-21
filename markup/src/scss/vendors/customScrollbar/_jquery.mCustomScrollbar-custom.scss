@@ -1,0 +1,25 @@
+.mCSB_scrollTools{
+	opacity:1;
+	.mCSB_draggerRail{
+		background:$background-color-add;
+		width:5px;
+	}
+	.mCSB_dragger{
+		&:active,
+		&.mCSB_dragger_onDrag {
+			.mCSB_dragger_bar{
+				background:$base-gray;
+			}
+		}
+		.mCSB_dragger_bar{
+			background:$base-gray;
+			width:5px;
+		}
+	}
+}
+
+.mCSB_inside{
+	> .mCSB_container{
+		margin-right: 20px;
+	}
+}

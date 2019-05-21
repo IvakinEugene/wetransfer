@@ -27,6 +27,15 @@
   }
 }
 
+.icon-grid:before {
+  content: "\e90d";
+}
+.icon-list:before {
+  content: "\e90e";
+}
+.icon-close:before {
+  content: "\e90c";
+}
 .icon-basket-add:before {
   content: "\e900";
 }

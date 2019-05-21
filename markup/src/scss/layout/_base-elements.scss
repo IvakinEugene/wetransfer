@@ -4,19 +4,19 @@
 
 .grid{
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: stretch;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
 	margin:-7px -10px;
 	> li{
 		display: flex;
-	    flex-direction: column;
-	    flex-wrap: nowrap;
-	    justify-content: flex-start;
-	    align-content: stretch;
-	    align-items: stretch;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: stretch;
+		align-items: stretch;
 		overflow:visible;
 		padding:7px 10px;
 		width:25%;
@@ -31,11 +31,11 @@
 
 .product-box{
 	display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: stretch;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
 	background:$white;
 	// height:359px;
 	padding:0 20px 20px;
@@ -59,11 +59,11 @@
 	
 	.media-holder{
 		display: flex;
-	    flex-direction: column;
-	    flex-wrap: nowrap;
-	    justify-content: center;
-	    align-content: center;
-	    align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
 		height:190px;
 		margin:0 0 3px;
 		// text-align:center;
@@ -97,14 +97,14 @@
 	}
 	.action-list{
 		display: flex;
-	    flex-direction: row;
-	    flex-wrap: nowrap;
-	    justify-content: flex-start;
-	    align-content: center;
-    	align-items: center;
-    	font-size:26px;
-    	line-height:1;
-    	margin:0 -1px 0 0;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+		font-size:26px;
+		line-height:1;
+		margin:0 -1px 0 0;
 		li{
 			padding:0 0 0 10px;
 			&.active {
@@ -185,11 +185,11 @@
 	}
 	.heading{
 		display: flex;
-	    flex-direction: row;
-	    flex-wrap: nowrap;
-	    justify-content: flex-start;
-	    align-content: flex-start;
-	    align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-items: flex-start;
 		padding:14px 0 20px;
 		width:100%;
 		.title{
@@ -199,12 +199,12 @@
 	}
 	.content{
 		display: flex;
-	    flex-direction: row;
-	    flex-wrap: nowrap;
-	    justify-content: space-between;
-	    align-content: stretch;
-	    align-items: stretch;
-	    overflow:hidden;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-content: stretch;
+		align-items: stretch;
+		overflow:hidden;
 	}
 	.media-holder{
 		margin:0 0 0 -15px;
@@ -212,11 +212,11 @@
 	}
 	.txt{
 		display: flex;
-	    flex-direction: column;
-	    flex-wrap: nowrap;
-	    justify-content: flex-start;
-	    align-content: stretch;
-	    align-items: stretch;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: stretch;
+		align-items: stretch;
 		padding:11px 0 16px 30px;
 		position:relative;
 		// width: calc(100% - 188px);
@@ -224,13 +224,13 @@
 	.title{
 		margin:0;
 	}
-    .footer{
-    	// align-self:flex-end;
-    	// position:static;
-    	// padding:0 5px 16px 31px;
-    	// margin-top: 0;
-    	// width: calc(100% - 188px);
-    }
+	.footer{
+		// align-self:flex-end;
+		// position:static;
+		// padding:0 5px 16px 31px;
+		// margin-top: 0;
+		// width: calc(100% - 188px);
+	}
 }
 
 .price{
@@ -344,22 +344,61 @@
 
 .colors-list{
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    margin:-4px;
-    li{
-    	padding:4px;
-    	&:before {
-    		display:none;
-    	}
-    }
-    a{
-    	border-radius: 5px;
-    	display:block;
-    	height:27px;
-    	width:27px;
-    }
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+	margin:-4px;
+	li{
+		padding:4px !important;
+		&:before {
+			display:none;
+		}
+	}
+	a{
+		border-radius: 5px;
+		box-shadow:0 0 0 1px #979797 inset;
+		display:block;
+		height:27px;
+		width:27px;
+	}
+}
+
+.input-range-box{
+	padding:0 0 10px;
+	.output{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+		margin:0 0 36px;
+	}
+	input[type=text]{
+		// background:$form-element-background;
+		// border-color: $form-element-border-color;
+		// box-shadow:none;
+		// color:$base-text-color;
+		// font-size:12px;
+		// height:29px;
+		// line-height:17px;
+		// padding:5px 7px;
+		width:50px;
+	}
+	.divider{
+		background:#979797;
+		display:inline-block;
+		vertical-align:top;
+		font-size:0;
+		height:1px;
+		line-height:0;
+		margin:0 8px;
+		width:7px;
+	}
+	[class*="icon"]{
+		font-size: 12px;
+		margin:0 0 0 10px;
+	}
 }
