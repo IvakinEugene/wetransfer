@@ -27,6 +27,12 @@
   }
 }
 
+.icon-dryer:before {
+  content: "\e910";
+}
+.icon-percent:before {
+  content: "\e90f";
+}
 .icon-grid:before {
   content: "\e90d";
 }
@@ -35,6 +41,9 @@
 }
 .icon-close:before {
   content: "\e90c";
+}
+.icon-clock:before {
+  content: "\e911";
 }
 .icon-basket-add:before {
   content: "\e900";

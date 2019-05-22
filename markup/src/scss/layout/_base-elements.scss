@@ -104,8 +104,18 @@
 		align-items: center;
 		font-size:26px;
 		line-height:1;
-		margin:0 -1px 0 0;
+		// margin:0 -1px 0 0;
+		padding:0 4px 0 0;
+		&.vertical{
+			flex-direction: column;
+			align-content: center;
+    		align-items: center;
+			li{
+				padding:10px 0 0;
+			}
+		}
 		li{
+			overflow:visible;
 			padding:0 0 0 10px;
 			&.active {
 				[class*="basket"]{
@@ -129,6 +139,7 @@
 			}
 		}
 		[class*="basket"]{
+			margin:0 -5px 0 0;
 			// &:hover {
 			// 	color:$green;
 			// }
@@ -351,17 +362,26 @@
 	align-items: flex-start;
 	margin:-4px;
 	li{
-		padding:4px !important;
+		border-radius: 5px;
+		box-shadow:0 0 0 1px #979797 inset;
+		margin:4px;
+		padding:0 !important;
 		&:before {
 			display:none;
 		}
 	}
-	a{
-		border-radius: 5px;
-		box-shadow:0 0 0 1px #979797 inset;
+	.label-checkbox{
 		display:block;
 		height:27px;
+		transition:opacity $animation-speed;
 		width:27px;
+		&:hover,
+		&.jcf-label-active {
+			opacity:0.5;
+		}
+		.jcf-checkbox{
+			display:none;
+		}
 	}
 }
 
@@ -400,5 +420,69 @@
 	[class*="icon"]{
 		font-size: 12px;
 		margin:0 0 0 10px;
+	}
+}
+
+.pagination{
+  	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+	border-radius: $border-radius-base;
+	// color:$base-text-color;
+	font-size:14px;
+	font-weight:bold;
+	line-height:1.1429;
+	margin:20px 0 30px;
+	.page-numbers{
+		background:$white;
+		border: 1px solid #ddd;
+		color:$base-text-color;
+		display:inline-block;
+		vertical-align:top;
+		margin:0 -1px 0 0;
+		padding:13px 10px 14px;
+		position:relative;
+		text-align:center;
+		transition:color $animation-speed, border-color $animation-speed;
+		width:46px;
+		&:not([class*="dots"]) {
+			&:hover,
+			&.current {
+				color:$base-link-color;
+				z-index:5;
+			}
+		}
+		&:not([class*="dots"]) {
+			&.current {
+				border-color: $theme-color-add;
+			}
+		}
+	}
+	.prev,
+	.next{
+		// display:none;
+		&:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+
+			content: '\f053';
+		}
+	}
+	.next{
+		// display:none;
+		&:before {
+			content: '\f054';
+		}
 	}
 }

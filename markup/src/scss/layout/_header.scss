@@ -192,7 +192,8 @@
 		height:25px;
 		margin:7px 0 0;
 		min-width: 97px;
-		&:hover {
+		&:hover,
+		&.jcf-focus {
 			background:none;
 			border-color: #979797;
 			color:$theme-color-base;
@@ -242,6 +243,8 @@
 
 .login-box{
 	color:$base-text-color;
+	font-size:12px;
+	line-height:1.1667;
 	margin:0 0 0 48px;
 	.opener{
 		// color:inherit;
@@ -261,8 +264,6 @@
 			color:$base-text-color;
 			display:inline-block;
 			vertical-align:top;
-			font-size:12px;
-			line-height:1.1667;
 			&:hover {
 				color:$base-link-color;
 			}
@@ -285,13 +286,13 @@
 
 .wishlist-box{
 	color:$base-text-color;
+	font-size:12px;
+	line-height:1.1667;
 	margin:0 0 0 30px;
 	.opener{
 		color:inherit;
 		display:inline-block;
 		vertical-align:top;
-		font-size:12px;
-		line-height:1.1667;
 		padding:0 0 0 34px;
 		position:relative;
 		&:hover {
@@ -310,13 +311,13 @@
 
 .cart-box{
 	color:$base-text-color;
+	font-size:12px;
+	line-height:1.1667;
 	margin:0 0 0 33px;
 	.opener{
 		color:inherit;
 		display:inline-block;
 		vertical-align:top;
-		font-size:12px;
-		line-height:1.1667;
 		padding:0 0 0 44px;
 		position:relative;
 		&:hover {
@@ -373,7 +374,7 @@
 		font-size: 12px;
 		font-weight:bold;
 		line-height:1.1667;
-		padding:19px 15px 17px 47px;
+		padding:18px 15px 18px 47px;
 		position:relative;
 		transition:background $animation-speed, color $animation-speed;
 		&:hover {
@@ -450,11 +451,11 @@
 	a{
 		color:$base-text-color;
 		display: flex;
-	    flex-direction: row;
-	    flex-wrap: nowrap;
-	    justify-content: flex-start;
-	    align-content: center;
-	    align-items: center;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
 		padding:0 15px 0 46px;
 		position:relative;
 		width:100%;
@@ -472,7 +473,7 @@
 	font-weight:bold;
 	line-height:1.1667;
 	min-width: 163px;
-	padding:16px 15px 20px 63px;
+	padding:18px 15px 18px 63px;
 	position:relative;
 	transition:background $animation-speed;
 	&:hover {
@@ -480,8 +481,22 @@
 		color:$white;
 	}
 	&:before {
-		content: '%';
-		left:10px;
+		/* use !important to prevent issues with browser extensions that change fonts */
+		font-family: 'icomoon' !important;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		content: "\e90f";
+		font-size: 26px;
+		left:11px;
 		position:absolute;
 		top:50%;
 		transform:translateY(-50%);

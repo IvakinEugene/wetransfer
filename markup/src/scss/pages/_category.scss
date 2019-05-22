@@ -101,11 +101,11 @@
 	}
 	.current-filters{
 		display: flex;
-	    flex-direction: row;
-	    flex-wrap: wrap;
-	    justify-content: flex-start;
-	    align-content: flex-start;
-	    align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-items: flex-start;
 		margin:0 -18px 0 -6px;
 		li{
 			padding:6px;
@@ -121,6 +121,14 @@
 			vertical-align:top;
 			padding:5px 25px 7px 9px;
 			position:relative;
+			transition:color $animation-speed, background $animation-speed;
+			&:hover {
+				background:$theme-color-base;
+				color:$white;
+				&:before {
+					color:$white;
+				}
+			}
 			&:before {
 				/* use !important to prevent issues with browser extensions that change fonts */
 				font-family: 'icomoon' !important;
@@ -143,6 +151,7 @@
 				right:7px;
 				top:50%;
 				transform:translateY(-50%);
+				transition:color $animation-speed;
 			}
 		}
 	}
@@ -220,12 +229,85 @@
 
 .categories-view-box{
 	display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: flex-start;
-    align-items: flex-start;
-    background:$white;
-    margin:0 0 20px;
-    padding:10px 15px 20px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	align-items: flex-start;
+	background:$white;
+	font-size:12px;
+	line-height:1.25;
+	margin:0 0 20px;
+	padding:19px 15px 20px;
+	> div{
+		// &:last-child {
+		// 	display:none;
+		// }
+	}
+	ul{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-items: flex-start;
+		li{
+			padding:0;
+			+ li{
+				padding:0 0 0 14px;
+			}
+			&:before {
+				display:none;
+			}
+		}
+		a{
+			color:$base-text-color;
+			display:inline-block;
+			vertical-align:top;
+			padding:0 14px 0 0;
+			text-decoration:underline;
+			&:hover {
+				color:$base-link-color;
+			}
+			&:before {
+				color:$base-link-color;
+				font-size: 13px;
+				position:absolute;
+				right:0;
+				top:50%;
+				transform:translateY(-50%);
+			}
+		}
+	}
+	.view{
+		font-size:17px;
+		line-height:1;
+		margin:0 8px -3px 0;
+		li{
+			&.active {
+				a{
+					&:before {
+						color:#1c1b1a;
+					}
+				}
+			}
+		}
+		a{
+			padding:0;
+			text-decoration:none;
+			&:hover {
+				&:before {
+					color:$base-link-color;
+				}
+			}
+			&:before {
+				color:$base-gray;
+				// color:$base-text-color;
+				font-size: inherit;
+				position:static;
+				transform:none;
+				transition:color $animation-speed;
+			}
+		}
+	}
 }

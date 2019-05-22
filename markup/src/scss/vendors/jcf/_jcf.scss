@@ -1,8 +1,13 @@
 .label-checkbox{
+	cursor:pointer;
 	display:inline-block;
 	vertical-align:top;
 	padding:0 0 0 25px;
 	position:relative;
+	transition:color $animation-speed;
+	&:hover {
+		color:$base-link-color;
+	}
 	.jcf-checkbox{
 		left:0;
 		position:absolute;
