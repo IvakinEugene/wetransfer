@@ -7,4 +7,70 @@
 		align-content: flex-start;
 		align-items: flex-start;
 	}
+	.content{
+		flex: 1 1 auto;
+		padding:0 0 0 20px;
+	}
+	// .subcategory-list{
+	// 	margin-bottom:53px;
+	// }
+	.aside{
+		max-width: 222px;
+		min-width: 222px;
+		order: -1;
+		// padding:0 10px;
+		// h2{
+		// 	margin:-45px 0 15px;
+		// }
+	}
+}
+
+.store-heading{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+	background:$white;
+	margin:0 0 16px;
+	padding:22px 30px 33px;
+	h1{
+		margin:0 0 19px;
+	}
+	.contacts-list{
+		display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: flex-start;
+	    align-content: flex-start;
+	    align-items: flex-start;
+	    li{
+	    	padding:0 20px 0 21px;
+	    	&:before {
+	    		background:none;
+	    		color:$theme-color-base;
+	    		font-size: 14px;
+	    		height:auto;
+	    		left:0;
+	    		top:4px;
+	    		transform:scale(-1, 1);
+	    		width:auto;
+	    	}
+	    }
+	    a{
+	    	color:$base-text-color;
+	    	&:hover {
+	    		color:$base-link-color;
+	    	}
+	    }
+	}
+	.logo-holder{
+		display:block;
+		padding:17px 9px 0 0;
+	}
+}
+
+.store-offer{
+	margin:0 0 23px;
 }
