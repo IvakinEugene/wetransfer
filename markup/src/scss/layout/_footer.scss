@@ -54,11 +54,14 @@
 		    justify-content: flex-start;
 		    align-content: flex-start;
 		    align-items: flex-start;
+			background:$white;
 		}
 		.form-element{
 			flex:1 1 auto;
 		}
-		input[type=text]{
+		input[type=text],
+		input[type=email],
+		input[type=password]{
 			background:$white;
 			border-radius: 0;
 			padding-left: 19px;
@@ -67,6 +70,7 @@
 					display:none;
 				}
 			}
+			&:invalid {}
 			+ label{
 				top:17px;
 			}

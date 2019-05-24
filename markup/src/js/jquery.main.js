@@ -138,6 +138,11 @@ function initSlick() {
         focusOnSelect: true,
         variableWidth: true
     });
+    $('.slick-images').slick({
+        arrows: false,
+        dots:true,
+        infinite: false
+    });
 }
 
 /*

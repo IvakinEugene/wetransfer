@@ -47,6 +47,17 @@ footer{
 	}
 }
 
+.images-slider{
+	position:relative;
+	width:698px;
+	.slick-dots{
+		bottom:10px;
+		position:absolute;
+		right:0;
+		z-index:5;
+	}
+}
+
 .section-recent{
 	padding:11px 0;
 	.logos-slider{

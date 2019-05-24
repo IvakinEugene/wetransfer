@@ -355,6 +355,11 @@
 		background:$theme-color-base;
 		// color:$white;
 		transition: background $animation-speed;
+		.media-holder{
+			img{
+				transform:scale(1.1);
+			}
+		}
 		h3{
 			color:$white;
 			a{
@@ -366,7 +371,12 @@
 		}
 	}
 	.media-holder{
+		overflow:hidden;
 		position:relative;
+		img{
+			display:block;
+			transition:transform $animation-speed;
+		}
 		time{
 			background:$theme-color-add;
 			bottom:0;

@@ -47,6 +47,9 @@
 		}
 		a{
 			color:#0491ce;
+			&:hover {
+				color:darken(#0491ce, 15%);
+			}
 		}
 	}
 	.product-price-box{
@@ -141,7 +144,8 @@
 			&.jcf-label-active {
 				border-color: $theme-color-add
 			}
-			.jcf-checkbox{
+			.jcf-checkbox,
+			.jcf-radio{
 				display:none;
 			}
 		}
